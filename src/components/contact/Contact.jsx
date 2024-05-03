@@ -40,7 +40,7 @@ const Contact = () => {
                         </span>
 
                         <h3 className="contact__card-title">Address</h3>
-                        <p className="contact__card-data">North Tower, Toronto, Canada</p>
+                        <p className="contact__card-data">Addis Ababa, Ethiopia</p>
                     </div>
 
                     <div className="contact__card">
@@ -58,7 +58,7 @@ const Contact = () => {
                         </span>
 
                         <h3 className="contact__card-title">Email</h3>
-                        <p className="contact__card-data">zoe.miller@gmail.com</p>
+                        <p className="contact__card-data">yohannesteshome632@gmail.com</p>
                     </div>
 
                     <div className="contact__card">
@@ -67,7 +67,7 @@ const Contact = () => {
                         </span>
 
                         <h3 className="contact__card-title">Phone</h3>
-                        <p className="contact__card-data">+1 900 - 900 - 9000</p>
+                        <p className="contact__card-data">+251 - 941 - 929438</p>
                     </div>
                 </div>
 
@@ -126,7 +126,6 @@ const Contact = () => {
                     </div>
 
                     <div className="contact__submit">
-                        <p>* Accept the terms and conditions.</p>
                         <button type='submit' className='btn text-cs'>
                             Send Message
                         </button>

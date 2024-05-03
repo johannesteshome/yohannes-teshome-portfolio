@@ -21,7 +21,7 @@ const Services = () => {
         <section className="services section" id="services">
             <h2 className="section__title text-cs">What I Do</h2>
             <p className="section__subtitle">
-                My <span>Services</span>
+                My <span>Skills</span>
             </p>
 
             <Swiper
@@ -55,10 +55,10 @@ const Services = () => {
                                 <h3 className="services__title">{title}</h3>
                                 <p className="services__description">{description}</p>
 
-                                <a href="#pricing" className="link">
+                                {/* <a href="#pricing" className="link">
                                     See Pricing
                                     <FaArrowRight className='link__icon' />
-                                </a>
+                                </a> */}
 
                                 <img src={shapeTwo} alt="" className="shape c__shape" />
                             </SwiperSlide>
