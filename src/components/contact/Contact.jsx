@@ -10,7 +10,6 @@ import shapeOne from "../../assets/shape-1.png";
 import "./contact.css";
 import { send } from "emailjs-com";
 import { toast } from "react-toastify";
-import ClipLoader from "react-spinners/ClipLoader";
 
 const Contact = () => {
   const [form, setForm] = useState({
