@@ -135,26 +135,28 @@ export const projects = [
   {
     id: 1,
     img: Project1,
-    category: 'UI UX Design',
-    title: 'University Depratment UI',
+    category: "UI UX Design",
+    title: "University Depratment UI",
     description:
-      'User Interface design done for our university software engineering department using AdobeXD.',
+      "User Interface design done for our university software engineering department using AdobeXD.",
   },
   {
     id: 2,
     img: Project2,
-    category: 'Development',
-    title: 'Ticktime',
+    category: "Development",
+    title: "Ticktime",
     description:
-      'A simple web application to track attendance for teachers and students. This project was built using MERN tech stack and tailwind as the CSS framework.',
+      "A simple web application to track attendance for teachers and students. This project was built using MERN tech stack and tailwind as the CSS framework.",
+    link: "https://github.com/johannesteshome/attendance_management_system",
   },
   {
     id: 3,
     img: Project3,
-    category: 'Development',
-    title: 'Dashtrack',
+    category: "Development",
+    title: "Dashtrack",
     description:
-      'A task management system that allows team to create and manage project. This project was built with MERN stack along with socket.io for live chat among team members, calendar view and more.',
+      "A task management system that allows team to create and manage project. This project was built with MERN stack along with socket.io for live chat among team members, calendar view and more.",
+    link: "https://github.com/johannesteshome/dashtrack-task-management-system",
   },
   // {
   //   id: 4,

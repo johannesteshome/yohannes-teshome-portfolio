@@ -8,7 +8,7 @@ const Items = ({ projectItems }) => {
         <>
             {
                 projectItems.map((projectItem) => {
-                    const { id, img, category, title, description } = projectItem
+                    const { id, img, category, title, description, link } = projectItem
 
                     return (
                       <motion.div
@@ -35,9 +35,9 @@ const Items = ({ projectItems }) => {
 
                         
                         <a
-                          href='#pricing'
+                          href={link}
                           className='link'>
-                          See Code
+                          See More
                           <FaArrowRight className='link__icon' />
                         </a>
     
