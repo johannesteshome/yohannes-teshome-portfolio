@@ -27,6 +27,9 @@ jobs:
       - name: List Files After Build
         run: ls -la dist/
 
+      - name: Test SSH Connection
+        run: ssh -o StrictHostKeyChecking=no -i ~/.ssh/github_deploy_rsa ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "echo SSH connection successful"
+
       - name: Deploy via SSH
         uses: appleboy/scp-action@v0.1.4
         with:
