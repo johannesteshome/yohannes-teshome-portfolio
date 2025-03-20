@@ -25,7 +25,7 @@ jobs:
         run: npm run build
 
       - name: List Files After Build
-        run: ls -la
+        run: ls -la dist/
 
       - name: Deploy via SSH
         uses: appleboy/scp-action@v0.1.4
@@ -33,7 +33,7 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "build/*"
+          source: "dist/*"
           target: "${{ secrets.SERVER_PATH }}"
 
       - name: Restart Server (Optional)
