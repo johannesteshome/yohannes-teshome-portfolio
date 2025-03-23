@@ -27,6 +27,12 @@ jobs:
       - name: List Files After Build
         run: ls -la dist/
 
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/github_deploy_rsa
+          chmod 600 ~/.ssh/github_deploy_rsa
+
       - name: Test SSH Connection
         run: ssh -o StrictHostKeyChecking=no -i ~/.ssh/github_deploy_rsa ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "echo SSH connection successful"
 
