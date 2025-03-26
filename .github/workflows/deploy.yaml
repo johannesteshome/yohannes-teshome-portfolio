@@ -32,6 +32,7 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/github_deploy_rsa
           chmod 600 ~/.ssh/github_deploy_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
 
       - name: Test SSH Connection
         run: ssh -o StrictHostKeyChecking=no -i ~/.ssh/github_deploy_rsa ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "echo SSH connection successful"
